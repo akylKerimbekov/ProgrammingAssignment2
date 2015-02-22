@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	}
 
 	getMatrix <- function() {
-		return x
+		return(x)
 	}
 
 	cacheInverse <- function(solvedValue) {
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	}
 
 	getInverse <- function() {
-		return cachedValue
+		return(cachedValue)
 	}
 
 	list(setMatrix = setMatrix, getMatrix = getMatrix, 
