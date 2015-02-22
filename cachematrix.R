@@ -5,6 +5,28 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+	cashedValue <- NULL
+
+	setMatrix <- function(newMatrix) {
+		x <<- newMatrix
+		cachedValue <<- NULL
+	}
+
+	getMatrix <- function() {
+		return x
+	}
+
+	cacheInverse <- function(solvedValue) {
+		cachedValue <<- solvedValue
+	}
+
+	getInverse <- function() {
+		return cachedValue
+	}
+
+	list(setMatrix = setMatrix, getMatrix = getMatrix, 
+			cacheInverse = cacheInverse, getInverse = getInverse)
+
 }
 
 
