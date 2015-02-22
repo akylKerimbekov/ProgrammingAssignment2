@@ -1,6 +1,9 @@
 ## maybe my comments has mistakes, sorry for my bad english
 
 
+## the instructions of running script and output are in instructions.md file
+
+
 ## makeCacheMatrix consists of 4 functions and returns list of
 ## functions. The main idea of this function is to store a matrix
 ## and a cached inverse of that matrix.
